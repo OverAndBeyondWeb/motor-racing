@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = ({ title }) => (
-  <header ClassName="Header">
+  <header className="Header">
     <div className="title">
       <h1>Names</h1>
     </div>
