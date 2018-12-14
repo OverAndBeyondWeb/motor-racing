@@ -1,6 +1,6 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/reducer.js';
+import thunk from 'redux-thunk';
 
-const initialState = {title: 'Races'};
 
-export const store = createStore(reducer, initialState);
+export const store = createStore(reducer, applyMiddleware(thunk));
