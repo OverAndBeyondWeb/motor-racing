@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Names from './components/Names/Names';
 import Locations from './components/Locations/Locations';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -12,11 +12,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    // axios.get('http://ergast.com/api/f1/2018/circuits.json')
-    //   .then(resp => {
-    //     console.log(resp);
-    //   });
-    this.props.getData();
+    //this.props.getData();
   }
 
   render() {
