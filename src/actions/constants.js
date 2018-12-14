@@ -1,3 +1,2 @@
-export const TEST_ACTION = 'TEST_ACTION';
-
-export const GET_DATA = 'GET_DATA';
+export const GET_NAMES = 'GET_NAMES';
+export const GET_LOCATIONS = 'GET_LOCATIONS';

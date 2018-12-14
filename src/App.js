@@ -6,8 +6,7 @@ import Names from './components/Names/Names';
 import Locations from './components/Locations/Locations';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { testAction } from './actions/actions';
-import axios from 'axios';
+import { fillStoreWithAPIData } from './actions/actions';
 
 class App extends Component {
 
@@ -17,6 +16,7 @@ class App extends Component {
     //   .then(resp => {
     //     console.log(resp);
     //   });
+    this.props.getData();
   }
 
   render() {
@@ -41,7 +41,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    test: data => dispatch(testAction(data))
+    getData: () => dispatch(fillStoreWithAPIData())
   }
 }
 
