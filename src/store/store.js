@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import reducer from '../reducers/reducer.js';
 
-const initialState = {count: 0};
+const initialState = {title: 'Races'};
 
 export const store = createStore(reducer, initialState);
