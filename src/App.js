@@ -3,9 +3,17 @@ import { connect } from 'react-redux';
 import './App.css';
 
 import { testAction } from './actions/actions';
+import axios from 'axios';
 
 class App extends Component {
 
+
+  componentDidMount() {
+    axios.get('http://ergast.com/api/f1/2018/circuits.json')
+      .then(resp => {
+        console.log(resp);
+      });
+  }
 
   render() {
     return (
