@@ -5,11 +5,11 @@ export const getDataFromApi = () => {
   return axios.get('http://ergast.com/api/f1/2018/circuits.json');
 }
 
-const getRaceNames = (raceNames) => {
+export const getRaceNames = (raceNames) => {
   return {type: constants.GET_NAMES, names: raceNames};
 }
 
-const getRaceLocations = (raceLocations) => {
+export const getRaceLocations = (raceLocations) => {
   return {type: constants.GET_LOCATIONS, locations: raceLocations};
 }
 

@@ -1,3 +1,5 @@
+note: must uncomment line 15 in App.js for app to make the api call that sets the store with data.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
